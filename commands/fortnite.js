@@ -32,8 +32,7 @@ let embed = new Discord.RichEmbed()
 .addField("Matches Played", mPlayed, true)
 .addField("Win Percentage", winper , true)
 .addField("Kill/Death Ratio", kd , true);
-.setFooter("Command Executed")
-.setTimestamp()
+
 message.channel.send(embed);
 
 
