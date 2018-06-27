@@ -10,6 +10,7 @@ module.exports.run = async (PB, message, args) => {
     .setAuthor("")
     .setDescription(commandList)
     .setFooter("Command Executed")
+    .setTimestamp()
     message.channel.send({embed: embed});
 }
 
