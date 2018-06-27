@@ -16,6 +16,7 @@ module.exports.run = async (bot, message, args) => {
   .setAuthor(message.author.username)
   .setColor("#00FF00")
   .addField("💸", uCoins);
+  .setFooter("Command Executed")
   .setTimestamp()
   message.channel.send(coinEmbed).then(msg => {msg.delete(5000)});
 
