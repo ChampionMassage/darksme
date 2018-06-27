@@ -103,7 +103,7 @@ let xpAdd = Math.floor(Math.random() * 7) + 8;
 
   let curxp = xp[message.author.id].xp;
   let curlvl = xp[message.author.id].level;
-  let nxtLvl = xp[message.author.id].level * 300;
+  let nxtLvl = xp[message.author.id].level * 100;
   xp[message.author.id].xp =  curxp + xpAdd;
   if(nxtLvl <= xp[message.author.id].xp){
     xp[message.author.id].level = curlvl + 1;
@@ -113,11 +113,30 @@ let xpAdd = Math.floor(Math.random() * 7) + 8;
     .addField("New Level", curlvl + 1);
 
     message.channel.send(lvlup).then(msg => {msg.delete(5000)});
-
+  }
   fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
     if(err) console.log(err)
-  })
-  }
+  });
+
+  if(cmd === `${prefix}id`)  {
+    const dm = new Discord.RichEmbed()
+    .setAuthor(`${message.author.username}`, message.author.displayAvatarURL)
+    .setTitle("Successfully fetched ID")
+    .setDescription(`${message.author.tag} your id is ${message.author.id}`)
+    .setColor("#FF0000")
+    .setTimestamp()
+    message.author.send(dm)
+    
+    const embed = new Discord.RichEmbed()
+    .setAuthor(`${message.author.username}`, message.author.displayAvatarURL)
+    .setTitle("Successfully sent ID")
+    .setDescription("Sent your Discord User ID to your DM's")
+    .setColor("#FF0000")
+    .setTimestamp()
+    .setFooter("Command executed");
+    message.channel.send(embed)
+     } 
+
 
 
 });
