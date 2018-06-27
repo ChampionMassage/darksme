@@ -23,12 +23,13 @@ module.exports.run = async (bot, message, args) => {
     .addField("Banned In", message.channel)
     .addField("Time", message.createdAt)
     .addField("Reason", bReason);
-    .setFooter("Command Executed")
-    .setTimestamp()
+ 
     let incidentchannel = message.guild.channels.find(`name`, "incidents");
     if(!incidentchannel) return message.channel.send("Can't find incidents channel.");
 
     message.guild.member(bUser).ban(bReason);
+    .setFooter("Command Executed")
+    .setTimestamp()
     incidentchannel.send(banEmbed);
 }
 
