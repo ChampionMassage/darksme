@@ -8,6 +8,7 @@ module.exports.run = async (bot, message, args) => {
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("Created On", bot.user.createdAt);
+    .setFooter("Command Executed")
     .setTimestamp()
     message.channel.send(botembed);
 }
