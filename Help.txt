@@ -13,7 +13,8 @@ Kick - >kick @<Username> (Reason) Kicks a user
 Report - >report @<Username> (Reason) Reports a User
 Warn - >warn @<Username> (Reason) Warns a user (1st warn Warning 2nd Mute 3rd Ban)
 Say - >say (What you want the bot to say) Make the bot say somthing
-Tempmute >tempmute @<Username> (Miniutes EX: 1m , 2m ,30m)
+Tempmute - >tempmute @<Username> (Miniutes EX: 1m , 2m ,30m)
+Warnlevel - >warnlevel @<Username> Shows how many warning a user has
 
 Currency:
 
