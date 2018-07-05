@@ -1,3 +1,7 @@
+_**Darklord Bot:**_ Prefix: **>**
+
+
+
 _**Fun:**_
 
 8ball - >8ball <Question>   Answers a Question
@@ -31,12 +35,12 @@ _**XP:**_
 Level - >level  Shows which level are you in
 -----------------------------------------------------
 
-_**Alien Bot Commands:**_
+_**Alien Bot Commands:**_  Prefix: **!**
 
 Music Commands
 
-1. Play Format: -play (Song Name) Plays a song
-2. Stop Format: -stop Stops the current song
-3.Pause Format: -pause Pauses a song
-4.Resume Format: -resume Unpauses a song
+1. Play Format: !play (Song Name) Plays a song
+2. Stop Format: !stop Stops the current song
+3.Pause Format: !pause Pauses a song
+4.Resume Format: !resume Unpauses a song
 
