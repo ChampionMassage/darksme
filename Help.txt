@@ -1,9 +1,9 @@
-Fun:
+**Fun:**
 
 8ball - >8ball <Question>   Answers a Question
 Fortnite - >fortnite <EpicName> Tells You Your Lifetime Fortnite Stats
 
-Mod:
+**Mod:**
 
 Addrole - >addrole @<Username> (Name of role) Gives a role to a specified user
 Removerole - >removerole @<Username> (Name of role) Removes a role to a specified user
@@ -16,17 +16,27 @@ Say - >say (What you want the bot to say) Make the bot say somthing
 Tempmute - >tempmute @<Username> (Miniutes EX: 1m , 2m ,30m)
 Warnlevel - >warnlevel @<Username> Shows how many warning a user has
 
-Currency:
+**Currency:**
 
 Pay - >pay @<Username> <amt> Pays a user an amount of coins
 Coins - >coins Shows the amount of coins you have
  
-Info:
+**Info:**
 
 Botinfo - >botinfo Shows info about the bot
 Serverinfo - >serverinfo Shows info about the server
 Help - >help Shows this embed
 
-XP:
+**XP:**
 Level - >level  Shows which level are you in
+-----------------------------------------------------
+
+**Alien Bot Commands:**
+
+Music Commands
+
+1. Play Format: -play (Song Name) Plays a song
+2. Stop Format: -stop Stops the current song
+3.Pause Format: -pause Pauses a song
+4.Resume Format: -resume Unpauses a song
 
